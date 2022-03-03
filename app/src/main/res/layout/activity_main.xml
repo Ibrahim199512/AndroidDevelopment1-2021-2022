@@ -6,8 +6,34 @@
     android:layout_height="match_parent"
     tools:context="com.app.android.development1.y2021.y2022.MainActivity">
 
-    <TextView
+
+    <Button
+        android:id="@+id/my_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        />
+        android:background="@color/red"
+        android:padding="32dp"
+        android:text="Test Button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/my_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/blue"
+        android:padding="32dp"
+        android:text="Test Button2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_button" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
