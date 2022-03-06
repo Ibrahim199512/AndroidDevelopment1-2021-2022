@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="@color/blue"
+        android:onClick="myClick"
         android:padding="32dp"
         android:text="Test Button2"
         android:textColor="@color/white"

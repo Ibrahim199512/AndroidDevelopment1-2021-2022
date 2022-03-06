@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Log.e("onCreate", "Done");
 
         Button myButton = findViewById(R.id.my_button);
-        Button myButton2 = findViewById(R.id.my_button2);
+//        Button myButton2 = findViewById(R.id.my_button2);
         myButton.setOnClickListener(this);
-        myButton2.setOnClickListener(this);
+//        myButton2.setOnClickListener(this);
 //        myButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -72,10 +72,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.my_button) {
+            Log.e("IN","IN");
             Toast.makeText(this, "myButton", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "myButton2", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    public void myClick(View view) {
+        Toast.makeText(this, "myClick", Toast.LENGTH_SHORT).show();
+        Log.e("OUT","OUT");
     }
 }

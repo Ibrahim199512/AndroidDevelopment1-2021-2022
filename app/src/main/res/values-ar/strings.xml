@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidDevelopment1-2021-2022</string>
+    <string name="app_name2">AndroidDevelopment1-2021-2022</string>
+    <string name="print">طباعة</string>
+    <string name="print2">أطبع</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+</resources>
