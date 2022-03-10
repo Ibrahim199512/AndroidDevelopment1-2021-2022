@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
@@ -59,6 +60,24 @@ public class MainActivity2 extends AppCompatActivity {
                 } else {
                     Toast.makeText(MainActivity2.this, "N/A", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked)
+                    phoneNumber.setVisibility(View.VISIBLE);
+                else
+                    phoneNumber.setVisibility(View.GONE);
+//                Toast.makeText(MainActivity2.this, "" + isChecked, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        male.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                Toast.makeText(MainActivity2.this, "" + isChecked, Toast.LENGTH_SHORT).show();
             }
         });
     }

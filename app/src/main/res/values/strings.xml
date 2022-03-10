@@ -5,4 +5,12 @@
     <string name="print2">print</string>
     <string name="male">Male</string>
     <string name="female">Female</string>
+    <string name="age1">young (from 15 to 20)</string>
+    <string name="age2">youths (from 21 to 40)</string>
+    <string name="age3">elder (from 41 to 60)</string>
+    <string name="age4">Person age</string>
+    <string name="gender_text">Person gender</string>
+    <string name="java">java</string>
+    <string name="c">C</string>
+    <string name="save">Save</string>
 </resources>
