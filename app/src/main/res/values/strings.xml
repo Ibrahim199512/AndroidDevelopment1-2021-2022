@@ -13,4 +13,19 @@
     <string name="java">java</string>
     <string name="c">C</string>
     <string name="save">Save</string>
+    <string name="house">house</string>
+    <string name="apartment">apartment</string>
+    <string name="studio">studio</string>
+    <string name="under_500">Under 500$</string>
+    <string name="from_501_to_1000">From 501$ to 1000$</string>
+    <string name="from_1001_to_2000">From 1001$ to 2000$</string>
+    <string name="above_2001">Above 2001$</string>
+    <string name="Where_you_live">Where you live</string>
+    <string name="salary_range">salary range</string>
+    <string name="first_name">first name</string>
+    <string name="last_name">last name</string>
+    <string name="email">email</string>
+    <string name="phone_number">phone number</string>
+    <string name="salary">salary</string>
+    <string name="done">Done</string>
 </resources>
