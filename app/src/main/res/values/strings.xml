@@ -28,4 +28,6 @@
     <string name="phone_number">phone number</string>
     <string name="salary">salary</string>
     <string name="done">Done</string>
+    <string name="open1">open Activity</string>
+    <string name="finish_activity">finish Activity</string>
 </resources>

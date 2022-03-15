@@ -3,6 +3,7 @@ package com.app.android.development1.y2021.y2022;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,6 +38,10 @@ public class QuizActivity extends AppCompatActivity {
         save = findViewById(R.id.save);
         text3 = findViewById(R.id.text3);
         scrollView = findViewById(R.id.scroll_view);
+
+        Bundle bundle = getIntent().getExtras();
+        String s = bundle.getString("text1555");
+        Log.e("QuizActivityTest", "hhhhh" + s);
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
