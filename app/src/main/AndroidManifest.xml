@@ -19,6 +19,7 @@
         <activity android:name=".QuizActivity">
 
         </activity>
+
         <activity android:name=".ProgrammingCourseFormActivity"></activity>
         <activity android:name=".MainActivity2" />
         <activity android:name=".MainActivity" />

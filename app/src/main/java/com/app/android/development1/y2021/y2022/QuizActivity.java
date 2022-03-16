@@ -40,8 +40,12 @@ public class QuizActivity extends AppCompatActivity {
         scrollView = findViewById(R.id.scroll_view);
 
         Bundle bundle = getIntent().getExtras();
-        String s = bundle.getString("text1555");
-        Log.e("QuizActivityTest", "hhhhh" + s);
+//        String s = bundle.getString(Constant.TEXT1, "ttttttt");
+//        int i = bundle.getInt("number", -1);
+//        boolean b = bundle.getBoolean("boolean", false);
+//        Log.e("QuizActivityTest", "number = " + i);
+        User user = (User) bundle.getSerializable(Constant.USER);
+        Toast.makeText(this, "s = " + user.age, Toast.LENGTH_SHORT).show();
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
