@@ -1,5 +1,6 @@
 package com.app.android.development1.y2021.y2022;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -11,13 +12,14 @@ import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+    int i = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.e("onCreate", "Done");
-
+        Toast.makeText(this, "onCreate", Toast.LENGTH_SHORT).show();
         Button myButton = findViewById(R.id.my_button);
 //        Button myButton2 = findViewById(R.id.my_button2);
         myButton.setOnClickListener(this);
@@ -37,6 +39,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 //            }
 //        });
 
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.e("onSaveInstanceState", "Done");
+        outState.putInt("vari", i);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        int temp = savedInstanceState.getInt("vari", 20);
+        Log.e("Value", temp + "");
     }
 
     @Override
@@ -72,8 +88,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.my_button) {
-            Log.e("IN","IN");
+            Log.e("IN", "IN");
             Toast.makeText(this, "myButton", Toast.LENGTH_SHORT).show();
+            i = 50;
         } else {
             Toast.makeText(this, "myButton2", Toast.LENGTH_SHORT).show();
         }
@@ -82,6 +99,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void myClick(View view) {
         Toast.makeText(this, "myClick", Toast.LENGTH_SHORT).show();
-        Log.e("OUT","OUT");
+        Log.e("OUT", "OUT");
     }
 }

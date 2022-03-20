@@ -10,11 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidDevelopment120212022">
         <activity android:name=".MainActivity3">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".QuizActivity">
 
@@ -22,7 +18,13 @@
 
         <activity android:name=".ProgrammingCourseFormActivity"></activity>
         <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
