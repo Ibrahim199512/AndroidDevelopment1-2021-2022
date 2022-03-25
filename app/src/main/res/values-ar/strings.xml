@@ -5,4 +5,6 @@
     <string name="print2">أطبع</string>
     <string name="male">ذكر</string>
     <string name="female">أنثى</string>
+    <string name="retriev">جلب البيانات</string>
+    <string name="save">حفظ</string>
 </resources>

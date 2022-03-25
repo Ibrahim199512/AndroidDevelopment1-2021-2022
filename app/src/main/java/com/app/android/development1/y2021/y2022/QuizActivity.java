@@ -1,8 +1,11 @@
 package com.app.android.development1.y2021.y2022;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -18,6 +21,7 @@ public class QuizActivity extends AppCompatActivity {
     Button save;
     TextView text3;
     ScrollView scrollView;
+    boolean done = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,13 +43,13 @@ public class QuizActivity extends AppCompatActivity {
         text3 = findViewById(R.id.text3);
         scrollView = findViewById(R.id.scroll_view);
 
-        Bundle bundle = getIntent().getExtras();
-//        String s = bundle.getString(Constant.TEXT1, "ttttttt");
-//        int i = bundle.getInt("number", -1);
-//        boolean b = bundle.getBoolean("boolean", false);
-//        Log.e("QuizActivityTest", "number = " + i);
-        User user = (User) bundle.getSerializable(Constant.USER);
-        Toast.makeText(this, "s = " + user.age, Toast.LENGTH_SHORT).show();
+//        Bundle bundle = getIntent().getExtras();
+////        String s = bundle.getString(Constant.TEXT1, "ttttttt");
+////        int i = bundle.getInt("number", -1);
+////        boolean b = bundle.getBoolean("boolean", false);
+////        Log.e("QuizActivityTest", "number = " + i);
+//        User user = (User) bundle.getSerializable(Constant.USER);
+//        Toast.makeText(this, "s = " + user.age, Toast.LENGTH_SHORT).show();
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,6 +110,7 @@ public class QuizActivity extends AppCompatActivity {
                 if (temp.isEmpty()) {
                     scrollView.setVisibility(View.GONE);
                     text3.setVisibility(View.VISIBLE);
+                    done = true;
                 } else {
                     Toast.makeText(QuizActivity.this, "" + temp, Toast.LENGTH_SHORT).show();
                 }
@@ -114,6 +119,26 @@ public class QuizActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putBoolean("done", done);
+    }
+
+
+    @Override
+    public void onRestoreInstanceState(@Nullable Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        boolean b = savedInstanceState.getBoolean("done", false);
+        Log.e("onRestoreInstanceState", b + "");
+        if (b) {
+            scrollView.setVisibility(View.GONE);
+            text3.setVisibility(View.VISIBLE);
+        } else {
+            scrollView.setVisibility(View.VISIBLE);
+            text3.setVisibility(View.GONE);
+        }
+    }
 
     public String validation() {
 //        String result = "";
