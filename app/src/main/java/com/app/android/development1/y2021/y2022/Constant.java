@@ -4,4 +4,5 @@ public class Constant {
     public static final String TEXT1 = "text1";
     public static final String USER = "USER";
     public static final String FILE_NAME = "fileName";
+    public static final String STUDENT = "student";
 }
