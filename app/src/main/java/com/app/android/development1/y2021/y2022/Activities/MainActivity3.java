@@ -1,4 +1,4 @@
-package com.app.android.development1.y2021.y2022;
+package com.app.android.development1.y2021.y2022.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.app.android.development1.y2021.y2022.constant.Constant;
+import com.app.android.development1.y2021.y2022.R;
+import com.app.android.development1.y2021.y2022.models.User;
 
 public class MainActivity3 extends AppCompatActivity {
 

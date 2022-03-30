@@ -1,4 +1,4 @@
-package com.app.android.development1.y2021.y2022;
+package com.app.android.development1.y2021.y2022.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
+import com.app.android.development1.y2021.y2022.constant.Constant;
+import com.app.android.development1.y2021.y2022.R;
+import com.app.android.development1.y2021.y2022.models.Student;
 import com.google.gson.Gson;
 
 public class SharedPreferencesActivity2 extends AppCompatActivity {
@@ -18,6 +21,9 @@ public class SharedPreferencesActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shared_preferences2);
         seekBar = findViewById(R.id.seek_bar);
+
+
+        save(Constant.FILE_NAME,Constant.TEXT1,"Test");
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress

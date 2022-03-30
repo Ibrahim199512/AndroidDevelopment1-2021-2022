@@ -1,4 +1,4 @@
-package com.app.android.development1.y2021.y2022;
+package com.app.android.development1.y2021.y2022.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
+
+import com.app.android.development1.y2021.y2022.R;
 
 public class MainActivity2 extends AppCompatActivity {
 

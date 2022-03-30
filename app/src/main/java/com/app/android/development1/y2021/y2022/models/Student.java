@@ -1,4 +1,4 @@
-package com.app.android.development1.y2021.y2022;
+package com.app.android.development1.y2021.y2022.models;
 
 public class Student {
     private int gpa;

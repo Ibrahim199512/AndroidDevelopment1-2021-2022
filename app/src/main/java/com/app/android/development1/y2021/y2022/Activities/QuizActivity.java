@@ -1,11 +1,10 @@
-package com.app.android.development1.y2021.y2022;
+package com.app.android.development1.y2021.y2022.activities;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -14,6 +13,8 @@ import android.widget.RadioButton;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.app.android.development1.y2021.y2022.R;
 
 public class QuizActivity extends AppCompatActivity {
     EditText firstName, lastName, email, phoneNumber, salary;

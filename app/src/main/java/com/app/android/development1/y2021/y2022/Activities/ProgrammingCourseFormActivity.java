@@ -1,4 +1,4 @@
-package com.app.android.development1.y2021.y2022;
+package com.app.android.development1.y2021.y2022.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+
+import com.app.android.development1.y2021.y2022.R;
 
 public class ProgrammingCourseFormActivity extends AppCompatActivity {
 

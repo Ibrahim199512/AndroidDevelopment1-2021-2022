@@ -1,4 +1,4 @@
-package com.app.android.development1.y2021.y2022;
+package com.app.android.development1.y2021.y2022.constant;
 
 public class Constant {
     public static final String TEXT1 = "text1";

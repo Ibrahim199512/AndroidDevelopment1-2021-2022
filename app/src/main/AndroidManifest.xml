@@ -9,21 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidDevelopment120212022">
-        <activity android:name=".SharedPreferencesActivity2"></activity>
-        <activity android:name=".SharedPreferencesActivity">
+        <activity android:name=".activities.SharedPreferencesActivity2"></activity>
+        <activity android:name=".activities.SharedPreferencesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity3" />
+        <activity android:name=".activities.MainActivity3" />
         <activity
-            android:name=".QuizActivity"
+            android:name=".activities.QuizActivity"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".ProgrammingCourseFormActivity" />
-        <activity android:name=".MainActivity2" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activities.ProgrammingCourseFormActivity" />
+        <activity android:name=".activities.MainActivity2" />
+        <activity android:name=".activities.MainActivity" />
     </application>
 
 </manifest>
