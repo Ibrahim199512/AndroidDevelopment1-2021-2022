@@ -32,4 +32,8 @@
     <string name="finish_activity">finish Activity</string>
     <string name="send_email">Send Email</string>
     <string name="retriev">Retriev</string>
+    <string name="Add">Add</string>
+    <string name="read">read</string>
+    <string name="edit">edit</string>
+    <string name="delete">delete</string>
 </resources>
