@@ -32,7 +32,11 @@
     <string name="finish_activity">finish Activity</string>
     <string name="send_email">Send Email</string>
     <string name="retriev">Retriev</string>
-    <string name="Add">Add</string>
+    <string name="add">Add</string>
+    <string name="add_category">add category</string>
+    <string name="read_category">read category</string>
+    <string name="edit_category">edit category</string>
+    <string name="delete_category">delete category</string>
     <string name="read">read</string>
     <string name="edit">edit</string>
     <string name="delete">delete</string>

@@ -32,7 +32,7 @@
     <string name="open1">افتح الواجهة</string>
     <string name="finish_activity">اغلق الواجهة</string>
     <string name="send_email">ارسل الرسالة</string>
-    <string name="Add">اضافة</string>
+    <string name="add">اضافة</string>
     <string name="read">قراءة</string>
     <string name="edit">تعديل</string>
     <string name="delete">حذف</string>
