@@ -4,10 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/aaaa.xml" value="1.0" />
+        <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/activity_main4.xml" value="0.18206521739130435" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/activity_s_q_lite_exmaple1.xml" value="0.25" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
