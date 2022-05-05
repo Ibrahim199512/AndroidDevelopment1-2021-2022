@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_baseline_phone_enabled_24"
+        android:title="@string/about"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/ic_baseline_phone_disabled_24"
+        android:title="@string/help"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/next555"
+        android:icon="@drawable/ic_baseline_phone_enabled_24"
+        android:title="@string/next"
+        app:showAsAction="ifRoom" />
+<!--    <item-->
+<!--        android:id="@+id/next"-->
+<!--        android:icon="@drawable/ic_baseline_phone_enabled_24"-->
+<!--        android:title="@string/next"-->
+<!--        app:showAsAction="ifRoom" />-->
+<!--    <item-->
+<!--        android:id="@+id/next2"-->
+<!--        android:icon="@drawable/ic_baseline_phone_enabled_24"-->
+<!--        android:title="@string/next"-->
+<!--        app:showAsAction="ifRoom" />-->
+<!--    <item-->
+<!--        android:id="@+id/next3"-->
+<!--        android:icon="@drawable/ic_baseline_phone_enabled_24"-->
+<!--        android:title="@string/next"-->
+<!--        app:showAsAction="ifRoom" />-->
+<!--    <item-->
+<!--        android:id="@+id/next4"-->
+<!--        android:icon="@drawable/ic_baseline_phone_enabled_24"-->
+<!--        android:title="@string/next"-->
+<!--        app:showAsAction="ifRoom" />-->
+<!--    <item-->
+<!--        android:id="@+id/next5"-->
+<!--        android:icon="@drawable/ic_baseline_phone_enabled_24"-->
+<!--        android:title="@string/next"-->
+<!--        app:showAsAction="ifRoom" />-->
+<!--    <item-->
+<!--        android:id="@+id/next6"-->
+<!--        android:icon="@drawable/ic_baseline_phone_enabled_24"-->
+<!--        android:title="@string/next"-->
+<!--        app:showAsAction="ifRoom" />-->
+<!--    <item-->
+<!--        android:id="@+id/next7"-->
+<!--        android:icon="@drawable/ic_baseline_phone_enabled_24"-->
+<!--        android:title="@string/next"-->
+<!--        app:showAsAction="ifRoom" />-->
+
+
+</menu>

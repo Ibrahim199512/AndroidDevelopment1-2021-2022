@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidDevelopment120212022">
         <activity
-            android:name=".activities.MainActivity4"
+            android:name=".activities.OptionsMenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,11 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.SQLiteExmaple1Activity">
-
-        </activity>
+        <activity
+            android:name=".activities.MainActivity4"
+            android:exported="true"></activity>
+        <activity android:name=".activities.SQLiteExmaple1Activity"></activity>
         <activity android:name=".activities.SharedPreferencesActivity2" />
-        <activity android:name=".activities.SharedPreferencesActivity"></activity>
+        <activity android:name=".activities.SharedPreferencesActivity" />
         <activity android:name=".activities.MainActivity3" />
         <activity
             android:name=".activities.QuizActivity"

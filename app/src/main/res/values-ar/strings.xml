@@ -36,4 +36,7 @@
     <string name="read">قراءة</string>
     <string name="edit">تعديل</string>
     <string name="delete">حذف</string>
+    <string name="about">حول</string>
+    <string name="help">مساعدة</string>
+    <string name="next">التالي</string>
 </resources>

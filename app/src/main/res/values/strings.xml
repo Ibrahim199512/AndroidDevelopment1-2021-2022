@@ -40,4 +40,7 @@
     <string name="read">read</string>
     <string name="edit">edit</string>
     <string name="delete">delete</string>
+    <string name="about">About</string>
+    <string name="help">Help</string>
+    <string name="next">Next</string>
 </resources>
