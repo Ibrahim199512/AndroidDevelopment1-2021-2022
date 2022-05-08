@@ -43,6 +43,8 @@ public class SharedPreferencesActivity extends AppCompatActivity {
                 String s = sharedPreferences.getString("email", "No Value");
                 email.setText(s);
                 Toast.makeText(SharedPreferencesActivity.this, "" + s, Toast.LENGTH_SHORT).show();
+
+
             }
         });
 
