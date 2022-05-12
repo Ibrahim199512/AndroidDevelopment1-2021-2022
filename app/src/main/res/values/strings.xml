@@ -46,4 +46,6 @@
     <string name="show_alert_dialog">show alert dialog</string>
     <string name="price">Price</string>
     <string name="show_custom_dialog">show custom dialog</string>
+
+
 </resources>
