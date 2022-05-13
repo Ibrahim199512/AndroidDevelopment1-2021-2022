@@ -46,6 +46,10 @@
     <string name="show_alert_dialog">show alert dialog</string>
     <string name="price">Price</string>
     <string name="show_custom_dialog">show custom dialog</string>
+    <string name="show_success_toast">show success toast</string>
+    <string name="show_fail_toast">show fail toast</string>
+    <string name="show_toast">show toast</string>
+    <string name="show_toast2">show toast2</string>
 
 
 </resources>
