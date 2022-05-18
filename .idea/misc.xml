@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/beliv/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_list_item_1.xml" value="0.15775972637879435" />
         <entry key="..\:/Users/beliv/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.15775972637879435" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/drawable/ic_baseline_phone_disabled_24.xml" value="0.153" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/drawable/ic_baseline_phone_enabled_24.xml" value="0.154" />
@@ -16,6 +17,7 @@
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/aaaa.xml" value="1.0" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/activity_custom_toast_message.xml" value="0.15775972637879435" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/activity_dialogs.xml" value="0.15775972637879435" />
+        <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/activity_list_view.xml" value="0.11468721668177698" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/activity_main4.xml" value="0.18206521739130435" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/activity_options_menu.xml" value="0.15775972637879435" />
@@ -26,6 +28,7 @@
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/custom_dialog.xml" value="0.12" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/custom_toast.xml" value="0.15775972637879435" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/fail_custom_toast.xml" value="0.15775972637879435" />
+        <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/listview_item.xml" value="0.15775972637879435" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/spinner_item.xml" value="0.15775972637879435" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/layout/success_custom_toast.xml" value="0.18" />
         <entry key="..\:/Users/beliv/Documents/GitHub/AndroidDevelopment1-2021-2022/app/src/main/res/menu/my_options_menu.xml" value="0.25" />
