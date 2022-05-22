@@ -40,7 +40,7 @@ public class SQLiteExmaple1Activity extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean b = myDatabase.insertProduct("name2", 2
+                boolean b = myDatabase.insertProduct("name2", 1
                         , 200.5, "shop2", "image2");
 
                 Log.e("insertProduct", b + "");

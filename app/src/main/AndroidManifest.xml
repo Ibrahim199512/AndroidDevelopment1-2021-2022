@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidDevelopment120212022">
         <activity
-            android:name=".activities.ListViewActivity"
+            android:name=".activities.ProductActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,8 +21,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.CustomToastMessageActivity"
+            android:name=".activities.ListViewActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".activities.CustomToastMessageActivity"
+            android:exported="true" />
         <activity
             android:name=".activities.SpinnerActivity"
             android:exported="true" />
@@ -38,7 +41,15 @@
         <activity
             android:name=".activities.MainActivity4"
             android:exported="true" />
-        <activity android:name=".activities.SQLiteExmaple1Activity" />
+        <activity
+            android:name=".activities.SQLiteExmaple1Activity"
+            android:exported="true">
+            <!--            <intent-filter>-->
+            <!--                <action android:name="android.intent.action.MAIN" />-->
+
+            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--            </intent-filter>-->
+        </activity>
         <activity android:name=".activities.SharedPreferencesActivity2" />
         <activity android:name=".activities.SharedPreferencesActivity" />
         <activity android:name=".activities.MainActivity3" />
