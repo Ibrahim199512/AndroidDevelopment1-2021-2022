@@ -12,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidDevelopment120212022">
         <activity
-            android:name=".activities.ProductActivity"
+            android:name=".activities.ThirdActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.FirstActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,8 +27,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".activities.ProductActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".activities.ListViewActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".activities.CustomToastMessageActivity"
             android:exported="true" />
@@ -44,11 +55,13 @@
         <activity
             android:name=".activities.SQLiteExmaple1Activity"
             android:exported="true">
-            <!--            <intent-filter>-->
-            <!--                <action android:name="android.intent.action.MAIN" />-->
 
-            <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-            <!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity android:name=".activities.SharedPreferencesActivity2" />
         <activity android:name=".activities.SharedPreferencesActivity" />
