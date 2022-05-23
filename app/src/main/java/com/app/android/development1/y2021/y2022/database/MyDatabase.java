@@ -30,6 +30,12 @@ public class MyDatabase extends SQLiteOpenHelper {
     public static String categoryId = "categoryId";
     public static String categoryName = "categoryName";
 
+    public static String bookTable = "bookTable";
+    public static String bookId = "bookId";
+    public static String bookTitle = "categoryName";
+    public static String bookDescription = "bookDescription";
+    public static String bookAuthor = "bookAuthor";
+
     public MyDatabase(@Nullable Context context) {
         super(context, databaseName, null, databaseVersion);
     }
@@ -52,13 +58,83 @@ public class MyDatabase extends SQLiteOpenHelper {
                 + " FOREIGN KEY (" + categoryId + ") " + "REFERENCES " + categoryTable
                 + " (" + categoryId + ") )";
         db.execSQL(sqlProductTable);
+
+        String sqlBookTable = "create table " + bookTable
+                + " (" + bookId + " INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + bookTitle + " TEXT NOT NULL,"
+                + bookAuthor + " TEXT NOT NULL,"
+                + bookDescription + " TEXT NOT NULL"
+                + " )";
+        db.execSQL(sqlBookTable);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + productTable);
         db.execSQL("DROP TABLE IF EXISTS " + categoryTable);
+        db.execSQL("DROP TABLE IF EXISTS " + bookTable);
         onCreate(db);
+    }
+
+    public boolean insertBook(String bookTitleString
+            , String bookDescriptionString, String bookAuthorString) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(bookTitle, bookTitleString);
+        values.put(bookDescription, bookDescriptionString);
+        values.put(bookAuthor, bookAuthorString);
+        Long id = db.insert(bookTable, null, values);
+        db.close();
+        if (id == -1) return false;
+        else return true;
+    }
+
+    public void getAllBooks() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String[] project = {bookId, bookTitle, bookDescription, bookAuthor};
+        Cursor cursor = db.query(bookTable, project, null
+                , null, null, null, null);
+        cursor.moveToFirst();
+        try {
+            int bookIdColumnIndex = cursor.getColumnIndex(bookId);
+            int bookTitleColumnIndex = cursor.getColumnIndex(bookTitle);
+            int bookDescriptionColumnIndex = cursor.getColumnIndex(bookDescription);
+            int bookAuthorColumnIndex = cursor.getColumnIndex(bookAuthor);
+            while (!cursor.isAfterLast()) {
+                int temp1 = cursor.getInt(bookIdColumnIndex);
+                String temp2 = cursor.getString(bookTitleColumnIndex);
+                String temp3 = cursor.getString(bookDescriptionColumnIndex);
+                String temp4 = cursor.getString(bookAuthorColumnIndex);
+                Log.e("Reading", "id = " + temp1 + " " + "title " + temp2
+                        + " Description " + temp3 + " Author " + temp4);
+                cursor.moveToNext();
+            }
+        } finally {
+            cursor.close();
+            db.close();
+        }
+    }
+
+    public int editBook(int bookId, String bookAuthorString) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(bookAuthor, bookAuthorString);
+        int rows = db.update(bookTable, values, "bookId = ?"
+                , new String[]{String.valueOf(bookId)});
+        db.close();
+        return rows;
+    }
+
+    public int deleteBook(int bookIdNumber) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String[] s = new String[]{bookIdNumber + ""};
+        int rows = db.delete(bookTable, bookId+" = ? ", s);
+        db.close();
+//        if (rows != 0)
+//            return true;
+//        else
+//            return false;
+        return rows;
     }
 
     public boolean insertCategory(String name) {
